@@ -3,13 +3,16 @@
   "description": "Php Lumen Navigation Controller",
   "license": "MIT",
   "require": {
-    "php": "^7.1|^7.2|^7.3|^7.4",
+    "php": "^7.3|^7.4",
     "laravel/lumen-framework": "^5.6|^6.0",
-    "jonathan-martz/lumen-controller": "^0.2"
+    "jonathan-martz/lumen-controller": "^0.2",
+    "jonathan-martz/lumen-middelware-xss": "^0.1",
+    "jonathan-martz/lumen-middelware-https": "^0.1"
   },
   "autoload": {
     "classmap": [
-      "controller/"
+      "controller/",
+      "provider/"
     ]
   },
   "authors": [
@@ -19,5 +22,12 @@
       "homepage": "https://www.jmartz.de",
       "role": "Developer"
     }
-  ]
+  ],
+  "extra": {
+    "laravel": {
+      "providers": [
+        "App\\Providers\\NavigationProvider"
+      ]
+    }
+  }
 }
