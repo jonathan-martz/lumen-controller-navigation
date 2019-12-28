@@ -1,5 +1,5 @@
 {
-  "name": "jonathan-martz/lumen-navigation-controller",
+  "name": "jonathan-martz/lumen-controller-navigation",
   "description": "Php Lumen Navigation Controller",
   "license": "MIT",
   "require": {
