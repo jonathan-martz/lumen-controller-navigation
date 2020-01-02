@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use \http\Env\Response;
-use \Illuminate\Http\Request;
-use \Illuminate\Support\Facades\DB;
-use \Illuminate\Support\Facades\Hash;
+use http\Env\Response;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
 
 class NavigationController extends Controller
 {
@@ -19,7 +19,7 @@ class NavigationController extends Controller
 
         ]);
 
-        $this->addMessage('warning','Test message');
+        $this->addMessage('warning', 'Test message');
 
         return $this->getResponse();
     }
